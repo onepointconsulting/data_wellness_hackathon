@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "data-wellness-hackathon"
+version = "0.1.0"
+description = "Data Wellness Hackathon Initialization scripts"
+authors = ["Gil Fernandes <gil.fernandes@onepointltd.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openai = "^1.39.0"
+psycopg = {extras = ["binary"], version = "^3.2.1"}
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
